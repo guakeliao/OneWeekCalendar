@@ -8,6 +8,12 @@
 
 #import "OneWeekCalendar.h"
 #import "UIColor+expanded.h"
+
+@interface OneWeekCalendar ()
+
+@property (strong, nonatomic) IBOutletCollection(UILabel) NSArray *MondayLabel;
+@property (strong, nonatomic) IBOutletCollection(UILabel) NSArray *MondayColor;
+@end
 @implementation OneWeekCalendar
 
 /*
@@ -72,7 +78,7 @@
     
     NSInteger Monday = day - week+1+1;
     for (int i=1; i<=7; i++) {
-        UILabel *label = (UILabel *)[self viewWithTag:100+i];
+        UILabel *label = [_MondayLabel objectAtIndex:i-1];
         //        NSLog(@"本周 星期%d :%ld年%ld月%ld日 ",i,(long)year,(long)month,(long)Monday);
         label.text = [NSString stringWithFormat:@"%ld",(long)Monday];
         if (day == Monday) {
@@ -80,7 +86,7 @@
         }
         for (int j = 0; j < dates.count; j ++) {
             if ([((NSString *)[dates objectAtIndex:j]) integerValue] == Monday) {
-                UILabel *ColorLabel = (UILabel *)[self viewWithTag:500+i];
+                UILabel *ColorLabel = [_MondayColor objectAtIndex:i-1];
                 ColorLabel.backgroundColor = [UIColor colorWithHexString:[Colors objectAtIndex:j]];
             }
         }
