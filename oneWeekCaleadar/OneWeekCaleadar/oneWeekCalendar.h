@@ -7,8 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
-
+typedef NS_ENUM (NSInteger,Type){
+    TypeDefoult,//默认，显示一周的
+    TypeWeek//显示今天到下一周的今天
+};
 @interface OneWeekCalendar : UIView
+/**
+ *  type:显示效果
+ *
+ */
+@property (nonatomic, assign) Type type;
+
+
 /**
  *  设置对应号数的颜色
  *

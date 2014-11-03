@@ -20,6 +20,7 @@
     OneWeekCalendar *demo = [[[NSBundle mainBundle]loadNibNamed:@"OneWeekCalendar" owner:nil options:0]firstObject];
     demo.frame = CGRectMake(0, 100, 300, 100);
     [self.view addSubview:demo];
+    demo.type = TypeWeek;
     [demo markDates:[NSArray arrayWithObjects:[NSNumber numberWithInt:3],[NSNumber numberWithInt:6],[NSNumber numberWithInt:5], nil] withColors:[NSArray arrayWithObjects:@"0x383838",@"0xcfd4d8",@"0x383838", nil]];
 }
 

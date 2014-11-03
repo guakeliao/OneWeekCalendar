@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		661962F81A075A23005C0647 /* CalendarDateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 661962F61A075A23005C0647 /* CalendarDateView.m */; };
 		6652734C19F639F800656A21 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6652734B19F639F800656A21 /* main.m */; };
 		6652734F19F639F800656A21 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6652734E19F639F800656A21 /* AppDelegate.m */; };
 		6652735219F639F800656A21 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6652735119F639F800656A21 /* ViewController.m */; };
@@ -30,6 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		661962F61A075A23005C0647 /* CalendarDateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarDateView.m; sourceTree = "<group>"; };
+		661962F71A075A23005C0647 /* CalendarDateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarDateView.h; sourceTree = "<group>"; };
 		6652734619F639F800656A21 /* oneWeekCaleadar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = oneWeekCaleadar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6652734A19F639F800656A21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6652734B19F639F800656A21 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -131,6 +134,8 @@
 		6652737219F63A5E00656A21 /* OneWeekCaleadar */ = {
 			isa = PBXGroup;
 			children = (
+				661962F61A075A23005C0647 /* CalendarDateView.m */,
+				661962F71A075A23005C0647 /* CalendarDateView.h */,
 				6652737819F654F200656A21 /* UIColor+expanded.m */,
 				6652737919F654F200656A21 /* UIColor+expanded.h */,
 				6652737319F63A5E00656A21 /* OneWeekCalendar.h */,
@@ -243,6 +248,7 @@
 			files = (
 				6652737A19F654F200656A21 /* UIColor+expanded.m in Sources */,
 				6652737519F63A5E00656A21 /* OneWeekCalendar.m in Sources */,
+				661962F81A075A23005C0647 /* CalendarDateView.m in Sources */,
 				6652735219F639F800656A21 /* ViewController.m in Sources */,
 				6652734F19F639F800656A21 /* AppDelegate.m in Sources */,
 				6652734C19F639F800656A21 /* main.m in Sources */,

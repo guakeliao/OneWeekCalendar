@@ -8,11 +8,13 @@
 
 #import "OneWeekCalendar.h"
 #import "UIColor+expanded.h"
-
+#import "CalendarDateView.h"
 @interface OneWeekCalendar ()
 
-@property (strong, nonatomic) IBOutletCollection(UILabel) NSArray *MondayLabel;
-@property (strong, nonatomic) IBOutletCollection(UILabel) NSArray *MondayColor;
+//@property (strong, nonatomic) IBOutletCollection(UILabel) NSArray *MondayLabel;
+//@property (strong, nonatomic) IBOutletCollection(UILabel) NSArray *MondayColor;
+@property (strong, nonatomic) IBOutletCollection(CalendarDateView) NSArray *calendarDateView;
+
 @end
 @implementation OneWeekCalendar
 
@@ -33,11 +35,11 @@
     NSInteger year,month,day,hour,min,sec,week;
     NSString *weekStr=nil;
     
-    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
     NSDate *now = [NSDate date];;
     NSDateComponents *comps = [[NSDateComponents alloc] init];
-    NSInteger unitFlags = NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit | NSWeekdayCalendarUnit |
-    NSHourCalendarUnit | NSMinuteCalendarUnit | NSSecondCalendarUnit;
+    NSInteger unitFlags = NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay | NSCalendarUnitWeekday |
+    NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitSecond;
     
     comps = [calendar components:unitFlags fromDate:now];
     year = [comps year];
@@ -73,24 +75,62 @@
     else {
         NSLog(@"error!");
     }
-    
     //    NSLog(@"现在是:%ld年%ld月%ld日 %ld时%ld分%ld秒  %@",(long)year,(long)month,(long)day,(long)hour,(long)min,(long)sec,weekStr);
-    
-    NSInteger Monday = day - week+1+1;
-    for (int i=1; i<=7; i++) {
-        UILabel *label = [_MondayLabel objectAtIndex:i-1];
-        //        NSLog(@"本周 星期%d :%ld年%ld月%ld日 ",i,(long)year,(long)month,(long)Monday);
-        label.text = [NSString stringWithFormat:@"%ld",(long)Monday];
-        if (day == Monday) {
-            label.textColor = [UIColor redColor];
-        }
-        for (int j = 0; j < dates.count; j ++) {
-            if ([((NSString *)[dates objectAtIndex:j]) integerValue] == Monday) {
-                UILabel *ColorLabel = [_MondayColor objectAtIndex:i-1];
-                ColorLabel.backgroundColor = [UIColor colorWithHexString:[Colors objectAtIndex:j]];
+    if(_type != TypeWeek){
+        NSInteger Monday = day - week+1;
+        for (int i=1; i<=_calendarDateView.count; i++) {
+            CalendarDateView *calendarDateView = [_calendarDateView objectAtIndex:i-1];
+            //        NSLog(@"本周 星期%d :%ld年%ld月%ld日 ",i,(long)year,(long)month,(long)Monday);
+            calendarDateView.weakLabelText = [NSString stringWithFormat:@"%@",[self WeekString:i]];
+            calendarDateView.dayLabelText = [NSString stringWithFormat:@"%ld",(long)Monday];
+            if (day == Monday) {
+                calendarDateView.dayLabelColor = [UIColor redColor];
             }
+            for (int j = 0; j < dates.count; j ++) {
+                if ([((NSString *)[dates objectAtIndex:j]) integerValue] == Monday) {
+                    calendarDateView.colorLabelColor = [UIColor colorWithHexString:[Colors objectAtIndex:j]];
+                }
+            }
+            Monday=Monday+1;
         }
-        Monday=Monday+1;
+    }else
+    {
+       NSInteger customWeek = week;
+       NSInteger customday = day;
+        for (int i=1; i<=_calendarDateView.count; i++) {
+            CalendarDateView *calendarDateView = [_calendarDateView objectAtIndex:i-1];
+            //        NSLog(@"本周 星期%d :%ld年%ld月%ld日 ",i,(long)year,(long)month,(long)Monday);
+            calendarDateView.weakLabelText = [NSString stringWithFormat:@"%@",[self WeekString:customWeek]];
+            calendarDateView.dayLabelText = [NSString stringWithFormat:@"%ld",(long)customday];
+            if(i == 1)
+            {
+                calendarDateView.dayLabelColor = [UIColor redColor];
+            }
+            for (int j = 0; j < dates.count; j ++) {
+                if ([((NSString *)[dates objectAtIndex:j]) integerValue] == customday) {
+                    calendarDateView.colorLabelColor = [UIColor colorWithHexString:[Colors objectAtIndex:j]];
+                }
+            }
+            customWeek++;
+            customday++;
+        }
     }
+}
+
+-(NSString *)WeekString:(NSInteger)i
+{
+    NSString *weekString = nil;
+    switch (i<=7?i:1) {
+        case 2:{weekString = @"一";}break;
+        case 3:{weekString = @"二";}break;
+        case 4:{weekString = @"三";}break;
+        case 5:{weekString = @"四";}break;
+        case 6:{weekString = @"五";}break;
+        case 7:{weekString = @"六";}break;
+        case 1:{weekString = @"日";}break;
+        default:
+            break;
+    }
+    return weekString;
 }
 @end
