@@ -81,9 +81,9 @@
     CGFloat width = CGRectGetWidth(self.bounds);
     CGFloat height = (CGRectGetHeight(self.bounds) - colorHeight) / 2;
 
-    _weakLabel.frame = CGRectMake(0, 0, width, height);
-    _dayLabel.frame = CGRectMake(0, height, width, height);
-    _colorLabel.frame = CGRectMake(margin, height * 2, width-2*margin, colorHeight);
+    _weakLabel.frame = CGRectMake(0, 0, width, height - margin);
+    _dayLabel.frame = CGRectMake(0, height - margin, width, height - margin);
+    _colorLabel.frame = CGRectMake(margin, height * 2 , width-2*margin, colorHeight);
 
     _weakLabel.font = [UIFont systemFontOfSize:_fontSize];
     _dayLabel.font = [UIFont systemFontOfSize:_fontSize];

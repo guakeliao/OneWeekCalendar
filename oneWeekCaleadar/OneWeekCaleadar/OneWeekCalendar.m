@@ -119,8 +119,9 @@
 
 -(NSString *)WeekString:(NSInteger)i
 {
+    NSInteger week = i%7 == 0?i:i%7;
     NSString *weekString = nil;
-    switch (i<=7?i:1) {
+    switch (week) {
         case 2:{weekString = @"一";}break;
         case 3:{weekString = @"二";}break;
         case 4:{weekString = @"三";}break;
