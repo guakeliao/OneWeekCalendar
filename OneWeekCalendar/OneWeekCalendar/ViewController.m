@@ -1,8 +1,8 @@
 //
 //  ViewController.m
-//  oneWeekCaleadar
+//  OneWeekCalendar
 //
-//  Created by guakeliao on 14-10-21.
+//  Created by guakeliao on 14/11/5.
 //  Copyright (c) 2014年 Boco. All rights reserved.
 //
 
@@ -17,11 +17,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    OneWeekCalendar *demo = [[[NSBundle mainBundle]loadNibNamed:@"OneWeekCalendar" owner:nil options:0]firstObject];
-    demo.frame = CGRectMake(0, 100, 300, 100);
+    OneWeekCalendar *demo = [[[NSBundle mainBundle]loadNibNamed:@"OneWeekCalendar" owner:nil options:0]lastObject];
+    demo.frame = CGRectMake(10, 30, 300, 50);
+//    demo.backgroundColor = [UIColor grayColor];
     [self.view addSubview:demo];
-    demo.type = TypeDefoult;
-    [demo markDates:[NSArray arrayWithObjects:[NSNumber numberWithInt:10],[NSNumber numberWithInt:6],[NSNumber numberWithInt:5], nil] withColors:[NSArray arrayWithObjects:@"0x383838",@"0xcfd4d8",@"0x383838", nil]];
+    
+    demo.type = TypeWeek;
+    [demo markDates:[NSArray arrayWithObjects:[NSNumber numberWithInt:6],[NSNumber numberWithInt:10], nil] withColors:[NSArray arrayWithObjects:@"0x383838",@"0xcfd4d8",@"0x383838", nil]];
 }
 
 - (void)didReceiveMemoryWarning {

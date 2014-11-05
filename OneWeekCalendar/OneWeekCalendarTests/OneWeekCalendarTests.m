@@ -1,19 +1,19 @@
 //
-//  oneWeekCaleadarTests.m
-//  oneWeekCaleadarTests
+//  OneWeekCalendarTests.m
+//  OneWeekCalendarTests
 //
-//  Created by guakeliao on 14-10-21.
+//  Created by guakeliao on 14/11/5.
 //  Copyright (c) 2014年 Boco. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 
-@interface oneWeekCaleadarTests : XCTestCase
+@interface OneWeekCalendarTests : XCTestCase
 
 @end
 
-@implementation oneWeekCaleadarTests
+@implementation OneWeekCalendarTests
 
 - (void)setUp {
     [super setUp];

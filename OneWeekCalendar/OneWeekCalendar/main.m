@@ -1,8 +1,8 @@
 //
 //  main.m
-//  oneWeekCaleadar
+//  OneWeekCalendar
 //
-//  Created by guakeliao on 14-10-21.
+//  Created by guakeliao on 14/11/5.
 //  Copyright (c) 2014年 Boco. All rights reserved.
 //
 
