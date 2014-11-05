@@ -14,7 +14,7 @@
 		6652735519F639F800656A21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6652735319F639F800656A21 /* Main.storyboard */; };
 		6652735719F639F800656A21 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6652735619F639F800656A21 /* Images.xcassets */; };
 		6652735A19F639F800656A21 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6652735819F639F800656A21 /* LaunchScreen.xib */; };
-		6652736619F639F800656A21 /* oneWeekCaleadarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6652736519F639F800656A21 /* oneWeekCaleadarTests.m */; };
+		6652736619F639F800656A21 /* OneWeekCaleadarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6652736519F639F800656A21 /* OneWeekCaleadarTests.m */; };
 		6652737519F63A5E00656A21 /* OneWeekCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6652737419F63A5E00656A21 /* OneWeekCalendar.m */; };
 		6652737719F63AA600656A21 /* OneWeekCalendar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6652737619F63AA600656A21 /* OneWeekCalendar.xib */; };
 		6652737A19F654F200656A21 /* UIColor+expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = 6652737819F654F200656A21 /* UIColor+expanded.m */; };
@@ -33,7 +33,7 @@
 /* Begin PBXFileReference section */
 		661962F61A075A23005C0647 /* CalendarDateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarDateView.m; sourceTree = "<group>"; };
 		661962F71A075A23005C0647 /* CalendarDateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarDateView.h; sourceTree = "<group>"; };
-		6652734619F639F800656A21 /* oneWeekCaleadar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = oneWeekCaleadar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6652734619F639F800656A21 /* OneWeekCalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OneWeekCalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6652734A19F639F800656A21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6652734B19F639F800656A21 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6652734D19F639F800656A21 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -43,9 +43,9 @@
 		6652735419F639F800656A21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6652735619F639F800656A21 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6652735919F639F800656A21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		6652735F19F639F800656A21 /* oneWeekCaleadarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = oneWeekCaleadarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6652735F19F639F800656A21 /* OneWeekCalendarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OneWeekCalendarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6652736419F639F800656A21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6652736519F639F800656A21 /* oneWeekCaleadarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = oneWeekCaleadarTests.m; sourceTree = "<group>"; };
+		6652736519F639F800656A21 /* OneWeekCaleadarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OneWeekCaleadarTests.m; sourceTree = "<group>"; };
 		6652737319F63A5E00656A21 /* OneWeekCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneWeekCalendar.h; sourceTree = "<group>"; };
 		6652737419F63A5E00656A21 /* OneWeekCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneWeekCalendar.m; sourceTree = "<group>"; };
 		6652737619F63AA600656A21 /* OneWeekCalendar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OneWeekCalendar.xib; sourceTree = "<group>"; };
@@ -74,8 +74,8 @@
 		6652733D19F639F800656A21 = {
 			isa = PBXGroup;
 			children = (
-				6652734819F639F800656A21 /* oneWeekCaleadar */,
-				6652736219F639F800656A21 /* oneWeekCaleadarTests */,
+				6652734819F639F800656A21 /* OneWeekCalendar */,
+				6652736219F639F800656A21 /* OneWeekCalendar */,
 				6652734719F639F800656A21 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -83,13 +83,13 @@
 		6652734719F639F800656A21 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6652734619F639F800656A21 /* oneWeekCaleadar.app */,
-				6652735F19F639F800656A21 /* oneWeekCaleadarTests.xctest */,
+				6652734619F639F800656A21 /* OneWeekCalendar.app */,
+				6652735F19F639F800656A21 /* OneWeekCalendarTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6652734819F639F800656A21 /* oneWeekCaleadar */ = {
+		6652734819F639F800656A21 /* OneWeekCalendar */ = {
 			isa = PBXGroup;
 			children = (
 				6652737219F63A5E00656A21 /* OneWeekCaleadar */,
@@ -102,6 +102,7 @@
 				6652735819F639F800656A21 /* LaunchScreen.xib */,
 				6652734919F639F800656A21 /* Supporting Files */,
 			);
+			name = OneWeekCalendar;
 			path = oneWeekCaleadar;
 			sourceTree = "<group>";
 		};
@@ -114,12 +115,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		6652736219F639F800656A21 /* oneWeekCaleadarTests */ = {
+		6652736219F639F800656A21 /* OneWeekCalendar */ = {
 			isa = PBXGroup;
 			children = (
-				6652736519F639F800656A21 /* oneWeekCaleadarTests.m */,
+				6652736519F639F800656A21 /* OneWeekCaleadarTests.m */,
 				6652736319F639F800656A21 /* Supporting Files */,
 			);
+			name = OneWeekCalendar;
 			path = oneWeekCaleadarTests;
 			sourceTree = "<group>";
 		};
@@ -148,9 +150,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6652734519F639F800656A21 /* oneWeekCaleadar */ = {
+		6652734519F639F800656A21 /* OneWeekCalendar */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6652736919F639F800656A21 /* Build configuration list for PBXNativeTarget "oneWeekCaleadar" */;
+			buildConfigurationList = 6652736919F639F800656A21 /* Build configuration list for PBXNativeTarget "OneWeekCalendar" */;
 			buildPhases = (
 				6652734219F639F800656A21 /* Sources */,
 				6652734319F639F800656A21 /* Frameworks */,
@@ -160,14 +162,14 @@
 			);
 			dependencies = (
 			);
-			name = oneWeekCaleadar;
+			name = OneWeekCalendar;
 			productName = oneWeekCaleadar;
-			productReference = 6652734619F639F800656A21 /* oneWeekCaleadar.app */;
+			productReference = 6652734619F639F800656A21 /* OneWeekCalendar.app */;
 			productType = "com.apple.product-type.application";
 		};
-		6652735E19F639F800656A21 /* oneWeekCaleadarTests */ = {
+		6652735E19F639F800656A21 /* OneWeekCalendarTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6652736C19F639F800656A21 /* Build configuration list for PBXNativeTarget "oneWeekCaleadarTests" */;
+			buildConfigurationList = 6652736C19F639F800656A21 /* Build configuration list for PBXNativeTarget "OneWeekCalendarTests" */;
 			buildPhases = (
 				6652735B19F639F800656A21 /* Sources */,
 				6652735C19F639F800656A21 /* Frameworks */,
@@ -178,9 +180,9 @@
 			dependencies = (
 				6652736119F639F800656A21 /* PBXTargetDependency */,
 			);
-			name = oneWeekCaleadarTests;
+			name = OneWeekCalendarTests;
 			productName = oneWeekCaleadarTests;
-			productReference = 6652735F19F639F800656A21 /* oneWeekCaleadarTests.xctest */;
+			productReference = 6652735F19F639F800656A21 /* OneWeekCalendarTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -201,7 +203,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 6652734119F639F800656A21 /* Build configuration list for PBXProject "oneWeekCaleadar" */;
+			buildConfigurationList = 6652734119F639F800656A21 /* Build configuration list for PBXProject "OneWeekCalendar" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -214,8 +216,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6652734519F639F800656A21 /* oneWeekCaleadar */,
-				6652735E19F639F800656A21 /* oneWeekCaleadarTests */,
+				6652734519F639F800656A21 /* OneWeekCalendar */,
+				6652735E19F639F800656A21 /* OneWeekCalendarTests */,
 			);
 		};
 /* End PBXProject section */
@@ -259,7 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6652736619F639F800656A21 /* oneWeekCaleadarTests.m in Sources */,
+				6652736619F639F800656A21 /* OneWeekCaleadarTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +270,7 @@
 /* Begin PBXTargetDependency section */
 		6652736119F639F800656A21 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6652734519F639F800656A21 /* oneWeekCaleadar */;
+			target = 6652734519F639F800656A21 /* OneWeekCalendar */;
 			targetProxy = 6652736019F639F800656A21 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -377,7 +379,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = oneWeekCaleadar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = OneWeekCalendar;
 			};
 			name = Debug;
 		};
@@ -387,7 +389,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = oneWeekCaleadar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = OneWeekCalendar;
 			};
 			name = Release;
 		};
@@ -405,7 +407,7 @@
 				);
 				INFOPLIST_FILE = oneWeekCaleadarTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = OneWeekCalendarTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/oneWeekCaleadar.app/oneWeekCaleadar";
 			};
 			name = Debug;
@@ -420,7 +422,7 @@
 				);
 				INFOPLIST_FILE = oneWeekCaleadarTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = OneWeekCalendarTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/oneWeekCaleadar.app/oneWeekCaleadar";
 			};
 			name = Release;
@@ -428,7 +430,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6652734119F639F800656A21 /* Build configuration list for PBXProject "oneWeekCaleadar" */ = {
+		6652734119F639F800656A21 /* Build configuration list for PBXProject "OneWeekCalendar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6652736719F639F800656A21 /* Debug */,
@@ -437,7 +439,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6652736919F639F800656A21 /* Build configuration list for PBXNativeTarget "oneWeekCaleadar" */ = {
+		6652736919F639F800656A21 /* Build configuration list for PBXNativeTarget "OneWeekCalendar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6652736A19F639F800656A21 /* Debug */,
@@ -446,7 +448,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6652736C19F639F800656A21 /* Build configuration list for PBXNativeTarget "oneWeekCaleadarTests" */ = {
+		6652736C19F639F800656A21 /* Build configuration list for PBXNativeTarget "OneWeekCalendarTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6652736D19F639F800656A21 /* Debug */,

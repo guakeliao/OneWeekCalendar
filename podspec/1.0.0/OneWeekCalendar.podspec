@@ -21,8 +21,8 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => 'https://github.com/guakeliao/OneWeekCalendar.git', :tag => s.version.to_s}
 
-  s.source_files  =  "oneWeekCaleadar/OneWeekCaleadar/**/*.{h,m}"
-  s.resources = "oneWeekCaleadar/OneWeekCaleadar/*.xib"
+  s.source_files  =  "OneWeekCalendar/OneWeekCalendar/**/*.{h,m}"
+  s.resources = "OneWeekCalendar/OneWeekCalendar/*.xib"
 
   s.requires_arc = true
 
